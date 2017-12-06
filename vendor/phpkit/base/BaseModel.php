@@ -216,6 +216,8 @@ class BaseModel extends \Phalcon\Mvc\Model {
 		$this->findOptions = array(); //清空查询
 		return $res;
 	}
+
+
 //添加get缓存
 	public function AddCacheForGet($key) {
 		$tableName = $this->getTableName();

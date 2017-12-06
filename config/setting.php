@@ -5,8 +5,8 @@ $setting = array(
     'cacheDir'=>wwwRoot.'/cache/',
     'viewsDir'=>phpkitRoot."/views/",
     'registerNamespaces' => array(
-		'services\\controllers' => wwwRoot . '/services/controllers', //服务层目录
-		'services\\models' => wwwRoot . '/services/models', //Model层实现目录
+		'services' => wwwRoot . '/services', //服务层目录
+		//'services\\models' => wwwRoot . '/services/models', //Model层实现目录
 	),
 	'adminUrl'=>'http://www.eatwith.me/phpkit-admin',
 	'asstesUrl'=>'http://www.eatwith.me/phpkit-admin/asstes'

@@ -35,7 +35,7 @@ $di['db'] = function () {
     return new \Phalcon\Db\Adapter\Pdo\Mysql($DbConfig);
 };
 
-//缓存注入
+//缓存依赖注入
 // $di['cache'] = function () {
 //     return new \phpkit\redis\Redis(array(
 //         "prefix" => 'project-name-data-cache-',
@@ -56,32 +56,33 @@ $di['cache'] = function () {
 };
 
 
-//注入日志服务
+//注入依赖日志服务
 $di['logger']=function(){
     $params = require wwwRoot."/config/log.php";
     $logger = new \phpkit\aliyunLogger\Logger($params);
     return $logger;
 };
 
-//服务调用
+//本地服务调用
 $di['services']=function(){
     class services{
-       public function getController($name){
-          $controllers = "\\services\\controllers\\{$name}";
-          if(class_exists($controllers)){
-            return  new $controllers();
+       public function get($name){
+          $servicesPath  =str_replace(".", "\\", $name);
+          $className = "\\services\\".$servicesPath;
+          if(class_exists($className)){
+            return  new $className();
           }else{
-             throw new \Exception("Error class_no_exists:".$controllers, 1);      
+             throw new \Exception("Error class_no_exists:".$className, 1);      
           }
        }
-       public function getModel($name){
-          $model = "\\services\\models\\{$name}";
-          if(class_exists($model)){
-            return new $model();
-          }else{
-            throw new \Exception("Error class_no_exists:".$model, 1);     
-          }
-       }
+       // public function getModel($name){
+       //    $model = "\\services\\models\\{$name}";
+       //    if(class_exists($model)){
+       //      return new $model();
+       //    }else{
+       //      throw new \Exception("Error class_no_exists:".$model, 1);     
+       //    }
+       // }
 
     }
     return new services();
