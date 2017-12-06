@@ -1,0 +1,1 @@
+C:37:"phpkit\backend\models\SystemAdminMenu":215:{a:7:{s:2:"Id";s:1:"7";s:3:"Url";s:30:"/system-admin-menu-group/index";s:4:"Name";s:18:"系统菜单分组";s:7:"OrderBy";s:1:"1";s:3:"Pid";s:1:"1";s:10:"ActiveMenu";s:0:"";s:4:"Code";s:23:"system-admin-menu-group";}}

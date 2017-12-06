@@ -1,0 +1,23 @@
+{
+    "name": "phpkit/auth",
+    "description": "权限控制,基于phalcon开发",
+    "keywords": [
+        "pay"
+    ],
+    "homepage": "http://www.phpkit.me/",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "liu21st",
+            "email": "liu21st@gmail.com"
+        }
+    ],
+    "config": {
+        "preferred-install": "dist"
+    }, 
+     "autoload": {
+        "psr-4": {
+            "phpkit\\auth\\": "src/"
+        }
+    }
+}

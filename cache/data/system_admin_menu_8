@@ -1,0 +1,1 @@
+C:37:"phpkit\backend\models\SystemAdminMenu":201:{a:7:{s:2:"Id";s:1:"8";s:3:"Url";s:28:"/addon-auth-user-roles/index";s:4:"Name";s:9:"用户组";s:7:"OrderBy";s:1:"6";s:3:"Pid";s:1:"1";s:10:"ActiveMenu";s:0:"";s:4:"Code";s:21:"addon-auth-user-roles";}}

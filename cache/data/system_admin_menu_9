@@ -1,0 +1,1 @@
+C:37:"phpkit\backend\models\SystemAdminMenu":174:{a:7:{s:2:"Id";s:1:"9";s:3:"Url";s:12:"/cache/index";s:4:"Name";s:12:"缓存管理";s:7:"OrderBy";s:3:"999";s:3:"Pid";s:1:"1";s:10:"ActiveMenu";s:0:"";s:4:"Code";s:5:"cache";}}

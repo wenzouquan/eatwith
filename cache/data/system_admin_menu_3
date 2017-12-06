@@ -1,0 +1,1 @@
+C:37:"phpkit\backend\models\SystemAdminMenu":191:{a:7:{s:2:"Id";s:1:"3";s:3:"Url";s:23:"/addon-auth-group/index";s:4:"Name";s:9:"权限组";s:7:"OrderBy";s:1:"2";s:3:"Pid";s:1:"1";s:10:"ActiveMenu";s:0:"";s:4:"Code";s:16:"addon-auth-group";}}
